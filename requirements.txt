@@ -3,11 +3,11 @@ chardet==3.0.4
 cheroot==5.8.2
 CherryPy==11.0.0
 idna==2.5
-Jinja2==2.9.6
+Jinja2==2.10.1
 MarkupSafe==1.0
 portend==2.1.2
 pytz==2017.2
-requests==2.18.3
+requests==2.20.0
 six==1.10.0
 tempora==1.8
-urllib3==1.22
+urllib3==1.24.2
