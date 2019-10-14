@@ -6,6 +6,7 @@ RUN apt-get update && \
     apt-get install -y tzdata && \
 	cp /usr/share/zoneinfo/Europe/Amsterdam /tmp/localtime && \
 	apt-get remove -y tzdata && \
+	apt-get autoremove -y && \
 	rm -rf /var/cache/apt/* && \
 	mv /tmp/localtime /etc/localtime
 
@@ -13,6 +14,7 @@ RUN apt-get update && \
 COPY requirements.txt /usr/src/app/
 RUN pip install --no-cache-dir -r /usr/src/app/requirements.txt
 
+# server.py contains the code for the application, site.conf contains the configuration of cherrypy.
 COPY server.py site.conf /usr/src/app/
 WORKDIR /usr/src/app
 
