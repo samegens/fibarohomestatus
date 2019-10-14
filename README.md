@@ -18,3 +18,4 @@ Then point a browser to the machine where you're running Docker. In my case I ha
 
 - When the connection to HC2 is temporarily unavailable, you will get an ugly Python error. Also you need to reload the page after the connection is restored.
 - It would be really nice if it would show when a sensor needs it's battery replaced/recharged.
+- The configuration is completely specific for my home. Using a data file that can be read from a volume would be much cleaner.
