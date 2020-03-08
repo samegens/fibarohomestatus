@@ -18,7 +18,7 @@ RUN pip install --no-cache-dir -r /usr/src/app/requirements.txt
 COPY server.py site.conf /usr/src/app/
 WORKDIR /usr/src/app
 
-# Normally CherryPy uses port 80, but in site.conf we change that to 80.
+# Normally CherryPy uses port 8080, but in site.conf we change that to 80.
 EXPOSE 80
 
 ENTRYPOINT ["cherryd", "-i", "server", "-c", "site.conf"]
