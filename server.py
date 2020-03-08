@@ -10,10 +10,12 @@ class Root(object):
         [ "Deursensor 4", "Achterdeur" ],
         [ "Raamsensor 6", "Woonkamerraam" ],
         [ "Raamsensor 7", "Keukenraam" ],
-        [ "Raamsensor 5", "Badkamerraam" ],
+#        [ "Raamsensor 5", "Badkamerraam" ],
+        [ "Raamsensor 10", "Badkamerraam" ],
         [ "Raamsensor 3", "Kate slaapkamerraam" ],
         [ "Raamsensor 2", "Ouderslaapkamerraam" ],
-        [ "Raamsensor 1", "Werkkamerraam" ]
+#        [ "Raamsensor 1", "Werkkamerraam" ]
+        [ "Raamsensor 9", "Werkkamerraam" ]
     ]
     _fibaro_to_name_map = dict(_fibaro_to_name_list)
     _devices_names = [x[0] for x in _fibaro_to_name_list]
