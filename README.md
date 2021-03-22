@@ -1,6 +1,8 @@
 # FibaroHomeStatus
 
-CherryPy webserver that retrieves the status from my [https://www.fibaro.com/en/products/home-center-2/](Fibaro Home Center 2) and shows it in a form suitable for a small wall-mounted display. 
+## Deprecated: I'm using a new (private) display project to show this information and much more.
+
+CherryPy webserver that retrieves the status from my [Fibaro Home Center 2](https://www.fibaro.com/en/products/home-center-2) and shows it in a form suitable for a small wall-mounted display. 
 
 ![screenshot](images/screenshot.png "Screenshot")
 
@@ -12,7 +14,7 @@ The Docker image can be found on the Docker hub. To use it, use a command line l
 
     docker run -d -p 8080:80 -e FIBARO_USER_NAME=myusername -e FIBARO_PASSWORD=mypassword -e FIBARO_HOST=192.168.2.3 blauwelucht/fibarohomestatus
 
-Then point a browser to the machine where you're running Docker. In my case I have an old Android tablet with a [https://www.wikihow.com/Set-a-Bookmark-Shortcut-in-Your-Home-Screen-on-Android](shortcut to the site).
+Then point a browser to the machine where you're running Docker. In my case I have an old Android tablet with a [shortcut to the site](https://www.wikihow.com/Set-a-Bookmark-Shortcut-in-Your-Home-Screen-on-Android).
 
 ## Known issues
 
